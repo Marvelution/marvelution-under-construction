@@ -1,0 +1,141 @@
+html,
+body {
+  font-family: $font-family-base;
+  background-color: $bg;
+}
+
+// START coming soon page section styles
+.coming-soon-page {
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .highlight {
+    color: $primary;
+  }
+
+  .floating-text {
+    font-family: Courier;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: rgba(247, 248, 252, 0.4);
+
+    @include lg {
+      font-size: 48px;
+      line-height: 150%;
+    }
+
+    &--1 {
+      // margin: -40px 0 0 -10px;
+      display: none;
+      @include lg {
+        margin-left: -40px;
+        display: block;
+      }
+    }
+    &--2 {
+      text-align: right;
+      @include lg {
+        text-align: left;
+        margin-left: 147px;
+      }
+    }
+  }
+
+  // left right general styles
+  .left-col,
+  .right-col {
+    position: relative;
+    width: 100%;
+    // min-height: 100vh;
+
+    @include lg {
+      width: 50%;
+    }
+  }
+
+  // left col styles
+  .left-col {
+    overflow: hidden;
+    // height: 400px;
+
+    @include lg {
+      height: auto;
+    }
+  }
+  .code-img {
+    width: 100%;
+    max-width: 80%;
+    @include lg {
+      max-width: 100%;
+    }
+  }
+  .overlay-img {
+    position: absolute;
+    top: 0;
+    right: -2px;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+    z-index: 5;
+    @include lg {
+      height: 100%;
+      width: auto;
+    }
+
+    &--desktop {
+      display: none;
+      @include lg {
+        display: block;
+      }
+    }
+    &--mobile {
+      display: block;
+      @include lg {
+        display: none;
+      }
+    }
+  } // overlay img
+
+  // right col
+  .right-col {
+    padding: 0 43px 43px 43px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 5;
+
+    @include lg {
+      padding: 100px 20px 20px 0;
+    }
+
+    h1 {
+      font-family: $heading-font;
+      font-style: normal;
+      font-weight: normal;
+
+      font-size: 33px;
+      line-height: 130%;
+      color: #ffffff;
+      max-width: 245px;
+      margin: 37px auto 0 auto;
+      text-align: center;
+
+      @include lg {
+        text-align: left;
+        font-size: 65px;
+        line-height: 150%;
+        max-width: 524px;
+        margin: 112px 0 0 0;
+      }
+    }
+  }
+}
+
+// END coming soon page section styles

@@ -1,0 +1,29 @@
+.cta {
+  width: 100%;
+  margin: 50px 0 60px 0;
+  text-align: center;
+
+  @include lg {
+    text-align: left;
+    margin: 89px 0 67px 0;
+  }
+}
+.btn {
+  font-family: $font-family-base;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #181840;
+  background: #ffd400;
+  border-radius: 3px;
+  min-width: 238px;
+  padding: 13px;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+
+  &:hover {
+    background-color: $btn-hover-color;
+  }
+}
