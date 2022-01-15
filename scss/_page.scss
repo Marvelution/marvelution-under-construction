@@ -24,10 +24,14 @@ body {
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
-    line-height: 150%;
+    line-height: 130%;
     color: rgba(247, 248, 252, 0.4);
 
     @include lg {
+      font-size: 26px;
+      line-height: 140%;
+    }
+    @media screen and (min-width: 1500px) {
       font-size: 48px;
       line-height: 150%;
     }
@@ -85,37 +89,58 @@ body {
     }
 
     img {
-      height: 100%;
-      width: auto;
+      height: auto;
+      width: 100%;
       max-width: unset;
+      @include lg {
+        height: 100%;
+        width: auto;
+      }
     }
   }
-  .overlay-img {
+
+  .overlay {
     position: absolute;
     top: 0;
+    left: 0;
+    right: 0;
     bottom: 0;
-    height: auto;
+    height: 100%;
     width: 100%;
-    z-index: 5;
+    background-image: url("/img/mobile-overlay-img-v2.png");
+    background-size: cover;
+    background-position: right top;
     @include lg {
-      height: 100%;
-      width: auto;
-      right: -2px;
+      background-image: url("/img/image.png");
     }
+  }
+  // .overlay-img {
+  //   position: absolute;
+  //   top: 0;
+  //   bottom: 0;
+  //   height: auto;
+  //   width: 100%;
+  //   z-index: 5;
 
-    &--desktop {
-      display: none;
-      @include lg {
-        display: block;
-      }
-    }
-    &--mobile {
-      display: block;
-      @include lg {
-        display: none;
-      }
-    }
-  } // overlay img
+  //   @include lg {
+  //     height: auto;
+  //     width: 100%;
+  //     right: -2px;
+  //   }
+
+  //   &--desktop {
+  //     display: none;
+  //     @include lg {
+  //       display: block;
+  //     }
+  //   }
+  //   &--mobile {
+  //     display: block;
+  //     @include lg {
+  //       display: none;
+  //     }
+  //   }
+  // } // overlay img
 
   // right col
   .right-col {
@@ -141,11 +166,19 @@ body {
       margin: 37px auto 0 auto;
       text-align: center;
 
+      @media screen and (min-width: 768px) {
+        font-size: 45px;
+        margin: 60px 0 0 0;
+      }
+
       @include lg {
         text-align: left;
+        max-width: 524px;
+      }
+
+      @media screen and (min-width: 1500px) {
         font-size: 65px;
         line-height: 150%;
-        max-width: 524px;
         margin: 112px 0 0 0;
       }
     }
