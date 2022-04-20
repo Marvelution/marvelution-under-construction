@@ -1,62 +1,17 @@
 // ----- heading fonts import
 @font-face {
-  font-family: "ChunkFive Ex";
-  src: url("../fonts/chunkfive-ex/chunkfive-ex.ttf");
+  font-family: 'ChunkFive Ex';
+  src: url('../fonts/chunkfive-ex/chunkfive-ex.ttf');
   font-weight: bold;
   font-style: normal;
 }
 
 // ----- button fonts import
 @font-face {
-  font-family: "HelveticaNeue";
-  src: url("../fonts/helveticaneue/helveticaNeueMedium.ttf");
+  font-family: 'HelveticaNeue';
+  src: url('../fonts/helveticaneue/helveticaNeueMedium.ttf');
   font-weight: normal;
   font-style: normal;
 }
 
-// ----- Mont fonts regular
-@font-face {
-  font-family: "Mont";
-  src: url("../fonts/mont/Mont-Regular.eot");
-  src: local("Mont Regular"), local("Mont-Regular"),
-    url("../fonts/mont/Mont-Regular.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/mont/Mont-Regular.woff") format("woff"),
-    url("../fonts/mont/Mont-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-// ----- Mont fonts semi-bold
-@font-face {
-  font-family: "Mont";
-  src: url("../fonts/mont/Mont-SemiBold.eot");
-  src: local("Mont SemiBold"), local("Mont-SemiBold"),
-    url("../fonts/mont/Mont-SemiBold.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/mont/Mont-SemiBold.woff") format("woff"),
-    url("../fonts/mont/Mont-SemiBold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-}
-
-// ----- Mont fonts bold
-@font-face {
-  font-family: "Mont";
-  src: url("../fonts/mont/Mont-Bold.eot");
-  src: local("Mont Bold"), local("Mont-Bold"),
-    url("../fonts/mont/Mont-Bold.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/mont/Mont-Bold.woff") format("woff"),
-    url("../fonts/mont/Mont-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Mont";
-  src: url("../fonts/mont/Mont-Heavy.eot");
-  src: local("Mont Bold"), local("Mont-Bold"),
-    url("../fonts/mont/Mont-Heavy.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/mont/Mont-Heavy.woff") format("woff"),
-    url("../fonts/mont/Mont-Heavy.ttf") format("truetype");
-  font-weight: 800;
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
